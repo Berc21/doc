@@ -3,6 +3,20 @@
     display: flex;
     justify-content: space-between;
     main {
-        max-width: 700px;
+        max-width: 35rem;
+        padding: 1rem 2rem;
+        background: #fff;
+        @extend %shadow-1;
+    }
+    .left-sidebar, .right-sidebar  {
+        @extend %side-bar;
+        background: #fff;
+        .content-list {
+           li {
+            margin-bottom: 0.75rem;
+            color: $grey;
+           }
+        }
     }
 }
+

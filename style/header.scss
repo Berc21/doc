@@ -1,13 +1,19 @@
 .main-header {
     @extend %container;
-    nav {
-        display: flex;
-        justify-content: space-between;
-        height: 75px;
-        background: red;
-        align-items: center;
-        > {
-            flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    @extend %shadow-1;
+    margin-bottom: 1rem;
+    background: #fff;
+    .logo {
+        margin-left: 1rem;
+        }
+    .menu {
+        margin-right: 1rem;
+        .hamburger {
+            @extend %reset-button;
+        }
         }
     }
-}

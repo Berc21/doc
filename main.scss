@@ -1,5 +1,8 @@
-@import 'node_modules/normalize.css/normalize.css';
+@import './style/reset';
 
+@import './style/color';
+@import './style/utilities';
+@import './style/typography';
 @import './style/helper';
 @import './style/header';
 @import './style/main';
