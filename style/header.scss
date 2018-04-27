@@ -1,0 +1,13 @@
+.main-header {
+    @extend %container;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        height: 75px;
+        background: red;
+        align-items: center;
+        > {
+            flex: 1;
+        }
+    }
+}

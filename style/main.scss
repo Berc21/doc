@@ -1,0 +1,8 @@
+.main-container {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+    main {
+        max-width: 700px;
+    }
+}
