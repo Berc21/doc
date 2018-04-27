@@ -1,5 +1,6 @@
 %container {
     max-width: 1080px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -40,3 +41,20 @@
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
 }
+
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+      @media (max-width: 70em) { @content ; }
+   }
+    @else if $point == laptop {
+      @media (max-width: 64em) { @content ; }
+   }
+     @else if $point == tablet {
+      @media (max-width: 50em) { @content ; }
+   }
+   @else if $point == mobile {
+      @media (max-width: 37.5em)  { @content ; }
+ 
+   }
+ }

@@ -1,6 +1,7 @@
 html {
     font-family: "Segoe UI";
     background: $background;
+    width: 100%;
 }
 
 h1 {
@@ -28,4 +29,31 @@ p {
     color: $grey;
 }
 
+pre {
+    overflow: auto;
+    display: block;
+    white-space: pre;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+ 
+a:link {
+    color: inherit;
+}
+a:visited {
+    color: #4ba3c7;
+}
+a:hover {
+    color: #4ba3c7;
+}
+a:active {
+    color: #4ba3c7;
+
+}

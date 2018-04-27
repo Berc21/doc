@@ -3,20 +3,47 @@
     display: flex;
     justify-content: space-between;
     main {
-        max-width: 35rem;
-        padding: 1rem 2rem;
+        max-width: 40rem;
+        width: 100%;
         background: #fff;
         @extend %shadow-1;
+        .main-article {
+            padding: 1rem 2rem;
+        }
     }
-    .left-sidebar, .right-sidebar  {
+    .left-sidebar {
+        max-width: 12rem;
+        flex: 1;
+        @include breakpoint(mobile) {
+            display: none;
+        }
+    }
+    .sticky-nav {
         @extend %side-bar;
+        @include breakpoint(mobile) {
+            display: none;
+        }
         background: #fff;
+        height: auto;
         .content-list {
-           li {
-            margin-bottom: 0.75rem;
-            color: $grey;
-           }
+            li {
+                margin-bottom: 0.75rem;
+                color: $grey;
+            }
+        }
+    }
+    .right-sidebar {
+        @extend %side-bar;
+        @include breakpoint(mobile) {
+            display: none;
+        }
+        background: #fff;
+        height: 100%;
+        .content-list {
+            li {
+                margin-bottom: 0.75rem;
+                color: $grey;
+            }
         }
     }
 }
-
